@@ -27,4 +27,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: sudo sh /root/nabaang/deploy/index.sh
+          script: 
+            cd /root/nabaang/deploy
+            sudo sh ./index.sh
